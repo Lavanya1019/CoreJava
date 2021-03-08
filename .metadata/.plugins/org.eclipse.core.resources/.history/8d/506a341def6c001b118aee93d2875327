@@ -1,0 +1,19 @@
+package CoreJava;
+
+public class EvenNum {
+	public static void main(String[] args) {
+	int i=10;
+	/*if (i%2==0) {
+		System.out.println(i + "is even");
+	}
+		else {
+			System.out.println(i + "isnot even");*/
+	
+	if (i==2)
+	{
+		System.out.println("Prime number");
+	}
+	
+
+}
+}

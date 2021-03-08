@@ -1,0 +1,16 @@
+package CoreJava;
+
+public class MainClass {
+	public static void main(String args[]) {
+		ChildClass c=new ChildClass();
+		Parentclass p=new ParentClass();
+		//c.show();
+		GrandChildClass gc=new GrandChildClass();
+		gc.calculate();
+		gc.display();
+		//gc.show();
+		
+		
+	}
+
+}

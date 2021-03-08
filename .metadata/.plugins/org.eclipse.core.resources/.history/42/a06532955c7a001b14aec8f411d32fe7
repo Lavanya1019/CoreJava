@@ -1,0 +1,28 @@
+package test3;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class TDDExample {
+	
+	@Test
+	
+	public void tesPageTitle() {
+		 System.setProperty("webdriver.chromedriver", "chromedriver");
+			//System.setProperty("webdriver.gecko.driver", "geckodriver");
+			
+			WebDriver driver = new ChromeDriver();
+			
+		     driver.get("https://www.simplilearn.com/");
+		     String ActTitle = driver.getTitle();
+		     String ExpTitle = "World's #1 Online Bootcamp";
+		     System.out.println(ActTitle);
+		     //Assert.assertEquals(ActTitle,  ExpTitle);
+		     
+	}
+
+}

@@ -1,0 +1,31 @@
+package test1;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+public class CrossBrowser {
+	WebDriver chromeDriver;
+	WebDriver firefoxDriver;
+	@Test
+	public void LaunchChrome() {
+		System.setProperty("webdriver.chromedriver", "/home/lavanyamstecnot/Downloads/chromedriver");
+		chromeDriver.get("https://www.w3schools.com/html/html_tables.asp");
+		chromeDriver.manage().window().maximize();
+		chromeDriver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+		
+	     
+	}
+	
+	@Test(dependsOnMethods="LaunchChrome")
+	public void testCase() {
+		
+		WebElement lnkLogin=driver.findElement(By.linkText("Log in"));
+		lnkLogin.click();
+		
+	}
+
+}

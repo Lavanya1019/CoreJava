@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Cucumber" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="test.TestRunner" time="17.326">
+    <testsuite name="Feature: Login into simplilearn website" time="17.326">
+      <testcase name="Positive scenario to test login functionality" classname="Login into simplilearn website" time="17.326">
+        <skipped>io.cucumber.junit.UndefinedThrowable: The step "User has opened amazon website on chrome browser" is undefined
+
+io.cucumber.junit.UndefinedThrowable: The step "User should be able to login successfully" is undefined
+
+</skipped>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

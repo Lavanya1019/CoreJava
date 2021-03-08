@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Cucumber" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="test.TestRunner" time="4.516">
+    <testsuite name="Feature: Login into simplilearn website" time="4.516">
+      <testcase name="Positive scenario to test login functionality" classname="Login into simplilearn website" time="4.515"/>
+    </testsuite>
+  </testsuite>
+</testrun>

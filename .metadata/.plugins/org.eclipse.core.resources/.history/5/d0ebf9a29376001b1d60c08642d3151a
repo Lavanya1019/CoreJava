@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="FunctionalTeste">
+  <test thread-count="5" name="LoginTest">
+  <!--  
+  <groups>
+  
+ 	 <run>
+ 	 
+         <include name="sanity"/>
+        
+  	 </run>
+  
+  </groups>
+  
+    <classes>
+      <class name="test2.Groups"/>
+      <class name="test2.TestCase1"/>
+      <class name="test2.TestCase2"/>
+      <class name="test2.Annotations"/>
+    </classes>
+    -->
+    <parameter name="a" value="5"></parameter>
+    
+     <parameter name="b" value="5"></parameter>
+     <test name="parameters">
+     <classes><class name="TestNG_Basics.parameters"/></classes>
+     
+     </test>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,11 @@
+Feature: Login into simplilearn website
+
+  Scenario Outline: Positive scenario to test login functionality
+    Given User has opened amazon website on chrome browser
+    When User enters correct "<username>" and "<password>"
+    Then User should be able to login successfully
+
+    Examples: 
+      | username    | password |
+      | abc@xyz.com | abc123   |
+      | pqr@abc.com | asb123   |

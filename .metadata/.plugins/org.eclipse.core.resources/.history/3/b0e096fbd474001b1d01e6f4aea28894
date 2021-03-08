@@ -1,0 +1,55 @@
+package test1;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+public class LogintestNG {
+
+	
+	WebDriver driver;
+@BeforeMethod
+	public void setup()
+	{
+	System.setProperty("webdriver.chromedriver", "/home/lavanyamstecnot/Downloads/chromedriver");
+	driver=new ChromeDriver();
+	driver.get("https://www.simplilearn.com/");
+    driver.manage().window().maximize();
+    driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+	}
+@Test
+public void login()
+{
+	WebElement lnkLogin=driver.findElement(By.linkText("Log in"));
+	
+    lnkLogin.click();
+    WebElement editUserName=driver.findElement(By.name("user_login"));
+    editUserName.sendKeys("abc@xyz.com");
+    WebElement editPwd=driver.findElement(By.name("user_pwd"));
+    editPwd.sendKeys("9900");
+    WebElement chkbox=driver.findElement(By.name("rememberMe"));
+    WebElement btnPwd=driver.findElement(By.name("btn_login"));
+    btnPwd.click();
+}
+@AfterMethod
+public void close()
+{
+	   driver.quit();
+}
+}
+
+		
+		
+		     
+		     
+			     
+
+	
+	
+
+
+
